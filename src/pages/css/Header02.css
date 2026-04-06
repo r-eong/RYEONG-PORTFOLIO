@@ -1,0 +1,26 @@
+.header {
+    color: #222;
+    background: #f0eff7;
+    /* background: #fff; */
+    border: 1px solid #f1f0f3;
+    border-radius: 10px;
+    /* position: sticky;
+    top: 0;
+    z-index: 100; */
+    width: 100%;
+    padding: 25px 30px;
+    text-align: right;
+    margin-top: 50px;
+    box-shadow: 0 0 5px #6145c40a;
+}
+
+.header .fa-house{
+    color: #6145c4;
+    /* color: #6045c4; */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header .fa-house:hover{
+    color: #331b88;
+}

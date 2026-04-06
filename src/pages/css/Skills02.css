@@ -1,0 +1,95 @@
+/* 개별 섹션 카드 스타일 */
+.skills {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #f1f0f3;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.skills_header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.skills_header i {
+    color: #6145c4;
+    font-size: 18px;
+}
+
+.skills_header span {
+    font-size: 17px;
+    font-weight: 600;
+    color: #222;
+}
+
+.skills hr {
+    border: none;
+    border-top: 1px solid #f1f0f3;
+    margin-bottom: 35px;
+}
+
+/* 스킬 그리드 */
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+.skill_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.skill_item:hover {
+    transform: translateY(-3px);
+}
+
+/* 아이콘 */
+.icon_box {
+    width: 90px;
+    height: 90px;
+    background-color: #fafbfc;
+    border: 1px solid #f1f0f3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.skill_item:hover .icon_box {
+    background-color: #fff;
+    border-color: #6145c4;
+    box-shadow: 0 10px 25px rgba(97, 69, 196, 0.1);
+}
+
+.icon_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 기술 명칭 */
+.skill_item p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    transition: color 0.3s ease;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.skill_item:hover p {
+    color: #6145c4;
+}

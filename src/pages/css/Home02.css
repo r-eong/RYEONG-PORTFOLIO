@@ -1,0 +1,179 @@
+.section {
+    min-height: 1000px;
+    max-width: 1200px;
+    color: #333;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+}
+
+/* --------------- 우측 고정 --------------- */
+
+.left_fixed {
+    position: sticky;
+}
+
+.profile,
+.category,
+.contact {
+    min-width: 230px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #6145c40a;
+    border-radius: 10px;
+    border: 1px solid #f1f0f3;
+    margin-top: 15px;
+}
+
+/* 프로필 */
+.section .left_fixed .profile{
+    position: relative;
+}
+.section .left_fixed .profile h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section .left_fixed .profile p {
+    color: #888;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.section .left_fixed .profile a{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.section .left_fixed .profile a .fa-house{
+    color: #6145c4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section .left_fixed .profile a .fa-house:hover{
+    color: #331b88;
+}
+
+/* 카테고리 */
+.category h5 {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.category ul li {
+    padding: 10px 0;
+}
+
+.category ul li i {
+    color: #888;
+    margin-right: 15px;
+    transition: all 0.3s;
+    font-size: 13px;
+}
+
+.category ul li a {
+    color: #666;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.category ul li a.active {
+    color: #6145c4dc;
+}
+
+.category ul li a.active i {
+    color: #6145c4dc;
+    transform: rotate(60deg);
+}
+
+.category ul li a:hover i,
+.category ul li a:hover {
+    color: #6145c4dc;
+}
+
+.category ul li a:hover i {
+    transform: rotate(60deg);
+}
+
+/* 링크 */
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact h5 {
+    color: #888;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    color: #666;
+}
+
+.contact img {
+    width: 16px;
+    filter: invert(39%) sepia(2%) saturate(0%) hue-rotate(36deg) brightness(102%) contrast(88%);
+}
+
+.contact a {
+    margin-left: 10px;
+    font-size: 15px;
+    color: #666;
+}
+
+.contact p:hover a {
+    color: #6045c4;
+}
+
+/* --------------- 우측 공통 --------------- */
+
+.home_container {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.top {
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #6145c40a;
+    border-radius: 10px;
+    border: 1px solid #f1f0f3;
+    /* font-weight: 600; */
+    font-size: 17px;
+}
+
+.top i {
+    color: #6145c4;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.top a{
+    color: #444;
+}
+.top a:hover{
+    color: #6045c4;
+}
+
+nav {
+    width: 100%;
+    margin-top: 15px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #6145c40a;
+    border-radius: 10px;
+    border: 1px solid #f1f0f3;
+}
+
+nav hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #79748f4d;
+}

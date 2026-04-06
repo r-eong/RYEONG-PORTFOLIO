@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    padding: 60px 0;
+    margin-top: 100px;
+    text-align: center;
+    border-top: 1px solid #f1f0f3;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #bbb;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.footer p span {
+    color: #6145c4;
+    /* font-weight: 500; */
+}
