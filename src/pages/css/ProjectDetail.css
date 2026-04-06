@@ -276,3 +276,32 @@
     align-items: center;
     gap: 6px;
 }
+
+@media screen and (max-width: 480px) {
+    .project_container{
+        padding: 20px;
+    }
+    .project_container hr{
+        margin: 20px 0;
+    }
+    .main_title{
+        font-size: 1.4rem;
+    }
+    .project_info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .project_info li p{
+        margin: 0;
+    }
+    .project_Box p{
+        font-size: 15px;
+    }
+    .project p, .con_group li{
+        word-break: keep-all;
+    }
+    .detail_links a{
+        padding: 10px 20px;
+    }
+}

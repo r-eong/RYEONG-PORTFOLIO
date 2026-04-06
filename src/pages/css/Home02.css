@@ -26,9 +26,10 @@
 }
 
 /* 프로필 */
-.section .left_fixed .profile{
+.section .left_fixed .profile {
     position: relative;
 }
+
 .section .left_fixed .profile h5 {
     font-size: 18px;
     font-weight: 700;
@@ -40,18 +41,19 @@
     font-size: 15px;
 }
 
-.section .left_fixed .profile a{
+.section .left_fixed .profile a {
     position: absolute;
     right: 20px;
     top: 20px;
 }
-.section .left_fixed .profile a .fa-house{
+
+.section .left_fixed .profile a .fa-house {
     color: #6145c4;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.section .left_fixed .profile a .fa-house:hover{
+.section .left_fixed .profile a .fa-house:hover {
     color: #331b88;
 }
 
@@ -155,10 +157,11 @@
     margin-right: 15px;
 }
 
-.top a{
+.top a {
     color: #444;
 }
-.top a:hover{
+
+.top a:hover {
     color: #6045c4;
 }
 
@@ -176,4 +179,64 @@ nav hr {
     margin: 20px 0;
     border: none;
     border-top: 1px solid #79748f4d;
+}
+
+/* 사이드 메뉴 오버레이 */
+.menu_overlay {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .top {
+        padding: 20px;
+    }
+
+    .left_fixed {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        z-index: 1000;
+        transition: 0.3s ease-in-out;
+        background: #fff;
+        padding-top: 80px;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 메뉴가 열렸을 때 위치 */
+    .left_fixed.active {
+        left: 0;
+        padding: 20px;
+    }
+
+    .home_container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    section {
+        min-height: auto;
+        /* 1000px 고정 해제 */
+        flex-direction: column;
+    }
+
+    /* 푸터가 가려지지 않게 하단 여백 추가 */
+    .home_container {
+        padding-bottom: 50px;
+    }
+
+    /* 사이드 메뉴 오버레이 */
+    .menu_overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* 반투명 검은색 */
+        z-index: 999;
+        /* 사이드바(1000)보다 낮게 설정 */
+    }
 }

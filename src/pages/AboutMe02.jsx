@@ -38,7 +38,7 @@ export default function AboutMe02() {
                             </div>
                             <div className="edu_item">
                                 <span className="date">2019. 03 - 2021. 02</span>
-                                <p className="school">전문대학 산업디자인과 졸업</p>
+                                <p className="school">한국폴리텍1대학(서울정수캠퍼스) 산업디자인과 졸업</p>
                             </div>
                             <div className="edu_item">
                                 <span className="date">2025. 08 - 2026. 04</span>

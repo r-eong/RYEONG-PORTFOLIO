@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Home02 from './pages/Home02';
@@ -12,12 +13,17 @@ import ProjectDetail_03 from './pages/ProjectDetail_03';
 import ProjectDetail_04 from './pages/ProjectDetail_04';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // 메뉴 상태
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
     <HashRouter>
-      {/* <Header02 /> */}
+      <Header02 toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
       <Routes>
         <Route path="/" element={<Navigate to="/02" replace />} />
-        <Route path="/02" element={<Home02 />}>
+        <Route path="/02" element={<Home02 isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}>
           <Route index element={<AboutMe02 />} />
           <Route path="SKILLS" element={<Skills02 />} />
           <Route path="PROJECT" element={<Project02 />} />

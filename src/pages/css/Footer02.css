@@ -4,6 +4,14 @@
     margin-top: 100px;
     text-align: center;
     border-top: 1px solid #f1f0f3;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 50px; /* 너무 멀리 있으면 줄여라 */
+    text-align: center;
+    border-top: 1px solid #f1f0f3;
+    background-color: #fafbfc; /* 배경색을 명시해서 다른 요소와 겹쳐도 보이게 */
+    position: relative;
+    z-index: 10; /* 사이드바 보다는 낮지만 컨텐츠보다는 높게 */
 }
 
 .footer p {
@@ -16,4 +24,10 @@
 .footer p span {
     color: #6145c4;
     /* font-weight: 500; */
+}
+
+@media screen and (max-width: 480px) {
+    .footer{
+        margin: 0;
+    }
 }
