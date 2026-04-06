@@ -313,4 +313,12 @@
     .detail_links a {
         padding: 10px 20px;
     }
+
+    .detail_links > div span {
+        font-size: 0.8rem;
+    }
+
+    .detail_links > div {
+        flex-wrap: nowrap;
+    }
 }
