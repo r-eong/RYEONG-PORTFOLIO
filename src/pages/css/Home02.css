@@ -188,7 +188,8 @@ nav hr {
 
 @media screen and (max-width: 480px) {
     .top {
-        padding: 20px;
+        padding: 0;
+        /* padding: 20px; */
     }
 
     .left_fixed {
