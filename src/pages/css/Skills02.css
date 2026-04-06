@@ -95,13 +95,18 @@
 }
 
 @media screen and (max-width: 480px) {
-    .skills{
+    .skills {
         padding: 20px;
     }
+
     .skills ul {
         grid-template-columns: repeat(3, 1fr);
         align-content: space-between;
         justify-content: space-between;
         gap: 20px;
+    }
+
+    .skills hr {
+        margin: 20px 0;
     }
 }

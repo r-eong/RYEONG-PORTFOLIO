@@ -167,7 +167,8 @@
 
 /* 모바일 (480px 이하) */
 @media screen and (max-width: 480px) {
-    .aboutme_text h2, 
+
+    .aboutme_text h2,
     .aboutme_text h2 span {
         font-size: 25px;
     }

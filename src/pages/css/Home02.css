@@ -221,7 +221,6 @@ nav hr {
         flex-direction: column;
     }
 
-    /* 푸터가 가려지지 않게 하단 여백 추가 */
     .home_container {
         padding-bottom: 50px;
     }
@@ -235,8 +234,6 @@ nav hr {
         width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
-        /* 반투명 검은색 */
         z-index: 999;
-        /* 사이드바(1000)보다 낮게 설정 */
     }
 }
