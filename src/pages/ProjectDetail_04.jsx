@@ -68,7 +68,7 @@ export default function ProjectDetail_04() {
 
                     {/* 외부 링크 바로가기 버튼 */}
                     <div className='detail_links'>
-                        <a href='https://www.figma.com/proto/IRXYOeiGRLUOkoB4u4W4Rv/%EC%9D%B4%EB%A0%B9%EA%B2%BD_%EC%9A%B0%EC%A7%80%EC%BB%A4%ED%94%BC?node-id=35-445&p=f&viewport=326%2C25%2C0.23&t=acmMBmYWrB79ermm-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=35%3A445&page-id=0%3A1' target="_blank" rel="noreferrer">프로토타입</a>
+                        <a href='https://www.figma.com/design/IRXYOeiGRLUOkoB4u4W4Rv/%EC%9D%B4%EB%A0%B9%EA%B2%BD_%EC%9A%B0%EC%A7%80%EC%BB%A4%ED%94%BC?node-id=0-1&t=LSo3MyWgEFBMKRM3-1' target="_blank" rel="noreferrer">프로토타입</a>
                     </div>
                 </div>
             </nav>
