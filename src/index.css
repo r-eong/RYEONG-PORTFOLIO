@@ -58,6 +58,6 @@ select {
 @media screen and (max-width: 480px) {
   #root {
     padding: 15px;
-    margin-top: 30px;
+    margin: 0;
   }
 }
