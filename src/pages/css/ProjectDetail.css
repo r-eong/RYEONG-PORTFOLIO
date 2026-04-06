@@ -282,10 +282,10 @@
         padding: 20px;
     }
     .project_container hr{
-        margin: 20px 0;
+        margin: 15px 0;
     }
     .main_title{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .project_info{
         display: flex;

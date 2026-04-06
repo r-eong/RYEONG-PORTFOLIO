@@ -7,13 +7,13 @@
     box-shadow: 0 10px 30px rgba(97, 69, 196, 0.05);
 }
 
-.aboutme_container > i {
+.aboutme_container>i {
     color: #6145c4;
     font-size: 20px;
     margin-right: 12px;
 }
 
-.aboutme_container > span {
+.aboutme_container>span {
     font-size: 18px;
     font-weight: 700;
     color: #222;
@@ -26,7 +26,7 @@
 }
 
 /* 상단 프로필 영역 */
-.aboutme_top{
+.aboutme_top {
     display: flex;
     align-items: center;
 }
@@ -167,51 +167,58 @@
 
 /* 모바일 (480px 이하) */
 @media screen and (max-width: 480px) {
-  .aboutme img{
-    width: 100%;
-    margin: 0;
-  }
-  .aboutme_top{
-    display: block;
-  }
-  .education_section{
-    margin-top: 40px;
-  }
+    .aboutme_text h2, 
+    .aboutme_text h2 span {
+        font-size: 28px;
+    }
 
-  /* EDUCATION - 세로 타임라인으로 변경 */
-  .education_section {
-    margin-top: 50px;
-  }
+    .aboutme img {
+        width: 100%;
+        margin: 0;
+    }
 
-  .edu_list {
-    flex-direction: column;
-    padding-top: 0;
-    padding-left: 20px;
-  }
+    .aboutme_top {
+        display: block;
+    }
 
-  /* 가로선을 세로 본체 선으로 변경 */
-  .edu_list::before {
-    top: 0;
-    left: 5px;
-    width: 2px;
-    height: 100%;
-    right: auto;
-  }
+    .education_section {
+        margin-top: 40px;
+    }
 
-  .edu_item {
-    padding-top: 0;
-    padding-bottom: 30px;
-    padding-left: 30px; 
-    text-align: left;
-  }
+    /* EDUCATION - 세로 타임라인으로 변경 */
+    .education_section {
+        margin-top: 50px;
+    }
 
-  /* 타임라인 점 위치 조정 */
-  .edu_item::before {
-    top: 5px;
-    left: -23px;
-  }
+    .edu_list {
+        flex-direction: column;
+        padding-top: 0;
+        padding-left: 20px;
+    }
 
-  .edu_item:last-child {
-    padding-bottom: 0;
-  }
+    /* 가로선을 세로 본체 선으로 변경 */
+    .edu_list::before {
+        top: 0;
+        left: 5px;
+        width: 2px;
+        height: 100%;
+        right: auto;
+    }
+
+    .edu_item {
+        padding-top: 0;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    /* 타임라인 점 위치 조정 */
+    .edu_item::before {
+        top: 5px;
+        left: -23px;
+    }
+
+    .edu_item:last-child {
+        padding-bottom: 0;
+    }
 }
