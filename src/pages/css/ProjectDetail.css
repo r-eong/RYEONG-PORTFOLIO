@@ -278,6 +278,10 @@
     gap: 6px;
 }
 
+.capability_list li{
+    line-height: 1.4;
+}
+
 @media screen and (max-width: 480px) {
     .project_container {
         padding: 20px;
