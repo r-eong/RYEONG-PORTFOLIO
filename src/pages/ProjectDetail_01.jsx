@@ -85,7 +85,7 @@ export default function ProjectDetail_01() {
                                 <h6>백엔드</h6>
                                 <ul>
                                     <li><strong>REST API 설계 및 서버 구축</strong> : Spring Boot와 MyBatis를 활용한 게시판 CRUD 및 데이터 처리 기능 구현</li>
-                                    <li><strong>사용자 인증 시스템</strong> : 회원가입 및 로그인 기능 개발 및 데이터베이스 기반 인증 흐름 적용</li>
+                                    <li><strong>게시판 기능 및 데이터 연동</strong> : 공지사항, 리뷰 등 주요 게시판의 CRUD 로직 개발 및 데이터베이스 연동 처리</li>
                                     <li><strong>공통 모듈 개발</strong> : 전 페이지에 재사용 가능한 <strong>공통 페이지네이션</strong> 설계 및 적용으로 코드 효율성 향상</li>
                                 </ul>
                             </div>
