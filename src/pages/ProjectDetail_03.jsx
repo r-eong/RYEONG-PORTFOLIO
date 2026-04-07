@@ -75,27 +75,27 @@ export default function ProjectDetail_03() {
                         <h5>구현 범위</h5>
                         <ul className="capability_list">
                             <li>
-                                <i className="fa-solid fa-check"></i>&nbsp;
+                                <i class="fa-regular fa-face-smile-beam"></i>&nbsp;
                                 <span><strong> 메인 화면</strong> : 실제 서비스와 유사한 레이아웃 구현</span>
                             </li>
                             <li>
-                                <i className="fa-solid fa-check"></i>&nbsp;
+                                <i class="fa-regular fa-face-smile-beam"></i>&nbsp;
                                 <span><strong> 영화 랭킹 슬라이드</strong> : 현재 상영 중인 영화 랭킹 UI 구현</span>
                             </li>
                             <li>
-                                <i className="fa-solid fa-check"></i>&nbsp;
+                                <i class="fa-regular fa-face-smile-beam"></i>&nbsp;
                                 <span><strong> 전체 영화 목록</strong> : 목록 화면 UI 구현</span>
                             </li>
                             <li>
-                                <i className="fa-solid fa-check"></i>&nbsp;
+                                <i class="fa-regular fa-face-smile-beam"></i>&nbsp;
                                 <span><strong> 메뉴 전체보기</strong> : 전체 메뉴 화면 UI 구현</span>
                             </li>
                             <li>
-                                <i className="fa-solid fa-check"></i>&nbsp;
+                                <i class="fa-regular fa-face-smile-beam"></i>&nbsp;
                                 <span><strong> 좌석 선택</strong> : 영화·극장이 고정된 상태에서 좌석 클릭 이벤트 구현</span>
                             </li>
                             <li className="not_supported">
-                                <i className="fa-solid fa-xmark"></i>&nbsp;
+                                <i class="fa-regular fa-face-surprise"></i>&nbsp;
                                 <span> 영화·극장·날짜 탐색 및 실제 예매·결제 기능은 구현되지 않았습니다.</span>
                             </li>
                         </ul>
