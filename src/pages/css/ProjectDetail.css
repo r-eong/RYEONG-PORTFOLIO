@@ -320,7 +320,7 @@
         word-break: keep-all;
     }
 
-    .detail_links > div {
+    /* .detail_links > div {
         flex-wrap: nowrap;
-    }
+    } */
 }
