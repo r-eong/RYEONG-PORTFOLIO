@@ -1,3 +1,41 @@
+/* -------- 라이트모드 기본 -------- */
+:root {
+  --bg-page: #fafbfc;
+  --bg-card: #ffffff;
+  --bg-header: #f0eff7;
+  --border-color: #f1f0f3;
+  --text-primary: #222;
+  --text-secondary: #555;
+  --text-muted: #888;
+  --text-link: #666;
+  --accent: #6d50d4;
+  --accent-light: rgba(97, 69, 196, 0.1);
+  --accent-hover: #1f0b65;
+  --footer-text: #fff;
+  --shadow-color: rgba(97, 69, 196, 0.05);
+  --bg-icon: #fafbfc;
+  --bg-icon-hover: rgba(180, 155, 255, 0.85);
+}
+
+/* -------- 다크모드 변수 -------- */
+body.dark {
+  --bg-page: #0f0f10;
+  --bg-card: #1b1b1c;
+  --bg-header: #1b1b1c;
+  --border-color: #2a2a2a;
+  --text-primary: #eeeeee;
+  --text-secondary: #aaaaaa;
+  --text-muted: #777777;
+  --text-link: #bbbbbb;
+  --accent: #9b7ef8;
+  --accent-light: rgba(155, 126, 248, 0.12);
+  --accent-hover: #c4aaff;
+  --footer-text: #555555;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --bg-icon: #323232;
+  --bg-icon-hover: #666;
+}
+
 * {
   font-family: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
   box-sizing: border-box;
@@ -7,12 +45,12 @@
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.02em;
   cursor: url('https://cdn.cursors-4u.net/css-previews/dark-purple-glitter-pointer-7e363da9-css.webp') 0 0, auto !important;
-
 }
 
 body {
   overflow-x: hidden;
-  background-color: #fafbfc;
+  background-color: var(--bg-page);
+  transition: background-color 0.3s ease;
 }
 
 #root {
@@ -54,7 +92,6 @@ select {
   cursor: pointer;
 }
 
-/* 모바일 (480px 이하) */
 @media screen and (max-width: 480px) {
   #root {
     padding: 15px;

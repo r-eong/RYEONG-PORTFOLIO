@@ -1,8 +1,9 @@
 .header {
     color: #222;
-    background: #f0eff7;
+    background: var(--bg-card);
+    /* background: var(--bg-header); */
     /* background: #fff; */
-    border: 1px solid #f1f0f3;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     /* position: sticky;
     top: 0;
@@ -11,34 +12,36 @@
     padding: 20px 30px;
     text-align: right;
     margin-top: 50px;
-    box-shadow: 0 0 5px #6145c40a;
+    box-shadow: 0 0 5px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
 }
 
-.header i{
-    color: #6145c4;
-    /* color: #6045c4; */
+.header i {
+    color: var(--accent);
     cursor: pointer;
     transition: 0.3s;
 }
 
-.header i:hover{
-    color: #331b88;
+.header i:hover {
+    color: var(--accent-hover);
 }
 
 .header .fa-bars {
-    display: none; 
+    display: none;
     cursor: pointer;
     font-size: 20px;
-    margin-left: 20px;
     vertical-align: middle;
 }
 
 /* 모바일 (480px 이하) */
 @media screen and (max-width: 480px) {
-  .header {
-    margin: 0;
-  }
-  .header .fa-bars {
+    .header {
+        margin: 0;
+    }
+    .header .fa-bars {
         display: inline-block;
     }
 }

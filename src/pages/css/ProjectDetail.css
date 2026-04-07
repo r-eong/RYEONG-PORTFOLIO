@@ -1,29 +1,30 @@
 /* 메인 컨테이너 */
 .project_container {
-    background-color: #fff;
+    background-color: var(--bg-card);
     border-radius: 16px;
-    border: 1px solid #f1f0f3;
+    border: 1px solid var(--border-color);
     padding: 40px;
-    box-shadow: 0 10px 30px rgba(97, 69, 196, 0.05);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .project_container>i {
     font-size: 24px;
-    color: #6145c4;
+    color: var(--accent);
     margin-bottom: 10px;
 }
 
 .main_title {
     font-size: 28px;
     font-weight: 700;
-    color: #222;
+    color: var(--text-primary);
     margin-bottom: 20px;
     margin-left: 15px;
 }
 
 .project_container hr {
     border: none;
-    border-top: 1px solid #f1f0f3;
+    border-top: 1px solid var(--border-color);
     margin: 30px 0;
 }
 
@@ -34,7 +35,7 @@
 
 .project_Box h5 {
     font-size: 14px;
-    color: #6145c4;
+    color: var(--accent);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -46,12 +47,12 @@
 .project_Box p {
     font-size: 16px;
     line-height: 1.7;
-    color: #444;
+    color: var(--text-secondary);
 }
 
 /* 기술 스택 리스트 */
 .stack_list {
-    background: #f9f8ff;
+    background: var(--bg-page);
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -60,10 +61,10 @@
 }
 
 .stack_item {
-    background: #fff;
+    background: var(--bg-card);
     padding: 8px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px var(--shadow-color);
     min-width: 46px;
     display: flex;
     justify-content: center;
@@ -81,33 +82,35 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background: #fff;
-    border: 1px solid #f1f0f3;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 45px;
     list-style: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .project_info li h5 {
     margin-bottom: 8px;
-    color: #888;
+    color: var(--text-muted);
     font-size: 13px;
 }
 
 .project_info li p {
     margin-bottom: 4px;
     font-weight: 600;
-    color: #222;
+    color: var(--text-primary);
     font-size: 15px;
 }
 
 /* 기여도 섹션 디테일 */
 .Contribution {
-    background: #fcfcff;
+    background: var(--bg-page);
     padding: 30px;
     border-radius: 10px;
-    border: 1px solid #f1f0f3;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .con_group {
@@ -121,7 +124,7 @@
 .con_group h6 {
     font-size: 16px;
     font-weight: 700;
-    color: #6145c4;
+    color: var(--accent);
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -131,7 +134,7 @@
     content: '';
     width: 4px;
     height: 14px;
-    background-color: #6145c4;
+    background-color: var(--accent);
     margin-right: 10px;
     border-radius: 2px;
 }
@@ -143,7 +146,7 @@
 
 .con_group ul li {
     font-size: 15px;
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 6px;
     position: relative;
@@ -154,19 +157,20 @@
     content: '•';
     position: absolute;
     left: 0;
-    color: #6145c4;
+    color: var(--accent);
     font-weight: bold;
 }
 
 /* 테스트 계정 안내 박스 */
 .test_account {
-    background: #fcfcff;
-    border: 1px solid #e9ecef;
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .account_item {
@@ -178,17 +182,17 @@
 .account_item p {
     margin: 0;
     font-size: 15px;
-    color: #555;
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
 .account_item p span {
-    color: #222;
+    color: var(--text-primary);
     font-weight: 700;
-    background: #fff;
+    background: var(--bg-card);
     padding: 2px 10px;
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 
 /* 관리자/테스트 라벨 */
@@ -203,15 +207,12 @@
 }
 
 .label.admin {
-    background-color: #6145c4;
-    /* 관리자는 포인트 보라색 */
+    background-color: var(--accent);
 }
 
 .label.user {
-    background-color: #888;
-    /* 일반 테스트는 회색 */
+    background-color: var(--text-muted);
 }
-
 
 /* 하단 바로가기 버튼 */
 /* 공통 */
@@ -221,7 +222,7 @@
     gap: 12px;
     margin-top: 50px;
     padding-top: 30px;
-    border-top: 1px solid #f1f0f3;
+    border-top: 1px solid var(--border-color);
 }
 
 .detail_links a {
@@ -235,15 +236,15 @@
 
 /* 메인 버튼 (프론트엔드, 백엔드) */
 .detail_links>a {
-    background-color: #6145c4;
-    border: 1px solid #6145c4;
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
     color: #fff;
 }
 
 /* 메인 버튼 호버 */
 .detail_links>a:hover {
-    background-color: #4a32a8;
-    box-shadow: 0 5px 15px rgba(97, 69, 196, 0.3);
+    background-color: var(--accent-hover);
+    box-shadow: 0 5px 15px var(--accent-light);
     color: #fff;
 }
 
@@ -256,22 +257,22 @@
 
 /* 서브 버튼 스타일 (PPT, GitHub, Notion) */
 .detail_links>div a {
-    background-color: #fff;
-    color: #6145c4;
-    border: 1px solid #6145c4;
+    background-color: var(--bg-card);
+    color: var(--accent);
+    border: 1px solid var(--accent);
 }
 
 /* 서브 버튼 호버 */
 .detail_links>div a:hover {
-    background-color: #e7e4f8;
-    color: #6145c4;
+    background-color: var(--accent-light);
+    color: var(--accent);
 }
 
 .link_notice {
     width: 100%;
     margin-bottom: 10px;
     font-size: 13px;
-    color: #6b6b6b;
+    color: var(--text-muted);
     display: flex;
     align-items: center;
     gap: 6px;

@@ -12,9 +12,9 @@ export default function Home02({ isMenuOpen, setIsMenuOpen }) {
                     <div className="profile">
                         <h5>02</h5>
                         <p>@RYEONG</p>
-                        <Link to="/02">
+                        {/* <Link to="/02">
                             <i className="fa-solid fa-house"></i>
-                        </Link>
+                        </Link> */}
                     </div>
                     {/* 카테고리 */}
                     <div className="category">
@@ -47,7 +47,7 @@ export default function Home02({ isMenuOpen, setIsMenuOpen }) {
                             <a href="mailto:dlfudrud627@naver.com" target="_blank" rel="noreferrer">dlfudrud627@naver.com</a>
                         </p>
                         <p>
-                            <img src="/img/icons/Github-icon.png" alt="노션 아이콘" />
+                            <i className="fa-brands fa-github"></i>
                             <a href="https://github.com/r-eong/RYEONG-PORTFOLIO" target="_blank" rel="noreferrer">GitHub</a>
                         </p>
                     </div>

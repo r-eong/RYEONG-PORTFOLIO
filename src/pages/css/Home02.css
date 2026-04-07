@@ -1,7 +1,7 @@
 .section {
     min-height: 1000px;
     max-width: 1200px;
-    color: #333;
+    color: var(--text-primary);
     margin: 0 auto;
     display: flex;
     gap: 15px;
@@ -18,11 +18,12 @@
 .contact {
     min-width: 230px;
     padding: 20px 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px #6145c40a;
+    background-color: var(--bg-card);
+    box-shadow: 0 0 5px var(--shadow-color);
     border-radius: 10px;
-    border: 1px solid #f1f0f3;
+    border: 1px solid var(--border-color);
     margin-top: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 /* 프로필 */
@@ -33,10 +34,11 @@
 .section .left_fixed .profile h5 {
     font-size: 18px;
     font-weight: 700;
+    color: var(--text-primary);
 }
 
 .section .left_fixed .profile p {
-    color: #888;
+    color: var(--text-muted);
     margin-top: 10px;
     font-size: 15px;
 }
@@ -48,18 +50,18 @@
 }
 
 .section .left_fixed .profile a .fa-house {
-    color: #6145c4;
+    color: var(--accent);
     cursor: pointer;
     transition: 0.3s;
 }
 
 .section .left_fixed .profile a .fa-house:hover {
-    color: #331b88;
+    color: var(--accent-hover);
 }
 
 /* 카테고리 */
 .category h5 {
-    color: #888;
+    color: var(--text-muted);
     margin-bottom: 20px;
 }
 
@@ -68,31 +70,31 @@
 }
 
 .category ul li i {
-    color: #888;
+    color: var(--text-muted);
     margin-right: 15px;
     transition: all 0.3s;
     font-size: 13px;
 }
 
 .category ul li a {
-    color: #666;
+    color: var(--text-link);
     font-weight: 500;
     font-size: 15px;
     padding: 10px;
 }
 
 .category ul li a.active {
-    color: #6145c4dc;
+    color: var(--accent);
 }
 
 .category ul li a.active i {
-    color: #6145c4dc;
+    color: var(--accent);
     transform: rotate(60deg);
 }
 
 .category ul li a:hover i,
 .category ul li a:hover {
-    color: #6145c4dc;
+    color: var(--accent);
 }
 
 .category ul li a:hover i {
@@ -107,7 +109,7 @@
 }
 
 .contact h5 {
-    color: #888;
+    color: var(--text-muted);
 }
 
 .contact p {
@@ -116,7 +118,7 @@
 }
 
 .contact i {
-    color: #666;
+    color: var(--text-link);
 }
 
 .contact img {
@@ -127,11 +129,11 @@
 .contact a {
     margin-left: 10px;
     font-size: 15px;
-    color: #666;
+    color: var(--text-link);
 }
 
 .contact p:hover a {
-    color: #6045c4;
+    color: var(--accent);
 }
 
 /* --------------- 우측 공통 --------------- */
@@ -143,36 +145,38 @@
 
 .top {
     padding: 20px 30px;
-    background-color: #fff;
-    box-shadow: 0 0 5px #6145c40a;
+    background-color: var(--bg-card);
+    box-shadow: 0 0 5px var(--shadow-color);
     border-radius: 10px;
-    border: 1px solid #f1f0f3;
+    border: 1px solid var(--border-color);
     /* font-weight: 600; */
     font-size: 17px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .top i {
-    color: #6145c4;
+    color: var(--accent);
     font-size: 18px;
     margin-right: 15px;
 }
 
 .top a {
-    color: #444;
+    color: var(--text-primary);
 }
 
 .top a:hover {
-    color: #6045c4;
+    color: var(--accent);
 }
 
 nav {
     width: 100%;
     margin-top: 15px;
     padding: 30px;
-    background-color: #fff;
-    box-shadow: 0 0 5px #6145c40a;
+    background-color: var(--bg-card);
+    box-shadow: 0 0 5px var(--shadow-color);
     border-radius: 10px;
-    border: 1px solid #f1f0f3;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 nav hr {
@@ -199,7 +203,7 @@ nav hr {
         height: 100vh;
         z-index: 1000;
         transition: 0.3s ease-in-out;
-        background: #fff;
+        background: var(--bg-card);
         padding-top: 80px;
         box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
     }

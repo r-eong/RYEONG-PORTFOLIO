@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Home02 from './pages/Home02';
@@ -13,14 +13,35 @@ import ProjectDetail_03 from './pages/ProjectDetail_03';
 import ProjectDetail_04 from './pages/ProjectDetail_04';
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // 메뉴 상태
+  // 모바일 - 메뉴 상태
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // 다크모드
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('darkMode');
+    return saved === 'true';
+  });
+
+  // 초기 진입 시 body 클래스 적용
+  useEffect(() => {
+    document.body.classList.toggle('dark', isDark);
+  }, []);
+
+  const toggleDark = () => {
+    setIsDark(prev => {
+      const next = !prev;
+      document.body.classList.toggle('dark', next);
+      localStorage.setItem('darkMode', next);
+      return next;
+    });
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   }
+
   return (
     <HashRouter>
-      <Header02 toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      <Header02 toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} isDark={isDark} toggleDark={toggleDark} />
       <Routes>
         <Route path="/" element={<Navigate to="/02" replace />} />
         <Route path="/02" element={<Home02 isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />}>
